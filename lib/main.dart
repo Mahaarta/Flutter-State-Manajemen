@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
             title: Consumer<ApplicationColor>(
               builder: (context, applicationColor, child) => Text(
-                "State Provider Managemtnt",
+                "State Provider Management",
                 style: TextStyle(color: applicationColor.color),
               ),
             ),
