@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:state_manajement/application_color.dart';
+import '42. State Management/application_color.dart';
 
 void main() {
   runApp(const MyApp());
