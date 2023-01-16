@@ -7,17 +7,15 @@ enum ColorEvent { toAmber, toLightBlue }
 class ColorBloc {
   Color _color = Colors.amber;
 
-  StreamController<ColorEvent> _eventController =
-      StreamController<ColorEvent>();
+  final StreamController<ColorEvent> _eventController = StreamController<ColorEvent>();
   StreamSink<ColorEvent> get eventSink => _eventController.sink;
 
-  StreamController<Color> _stateController = StreamController<Color>();
+  final StreamController<Color> _stateController = StreamController<Color>();
   StreamSink<Color> get _stateSink => _stateController.sink;
 
   Stream<Color> get stateStream => _stateController.stream;
 
   void _mapEventToState(ColorEvent colorEvent) {
-    print(colorEvent);
     if (colorEvent == ColorEvent.toAmber) {
       _color = Colors.amber;
     } else {

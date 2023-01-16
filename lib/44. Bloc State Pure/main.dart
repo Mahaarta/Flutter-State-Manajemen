@@ -39,10 +39,9 @@ class _MyAppState extends State<MyApp> {
             ),
             FloatingActionButton(
               onPressed: () {
-                print("light blue pressed");
                 bloc.eventSink.add(ColorEvent.toLightBlue);
               },
-              backgroundColor: Colors .lightBlue,
+              backgroundColor: Colors.lightBlue,
             )
           ],
         ),
